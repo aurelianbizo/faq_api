@@ -58,7 +58,7 @@ uvicorn app:app --reload
 ```
 Your API should now be running at http://127.0.0.1:8000.
 
-API Endpoints
+# API Endpoints
 1. /create-users - Create a New User
 This endpoint allows users to create a new account.
 
