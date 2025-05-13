@@ -13,8 +13,8 @@ JWT Authentication: Secure API access with JWT token-based authentication.
 Setup and Installation
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/faq-querying-api.git
-cd faq-querying-api
+git clone https://github.com/aurelianbizo/faq_api.git
+cd faq_api
 ```
 
 2. Install the dependencies
