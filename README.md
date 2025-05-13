@@ -62,14 +62,6 @@ Your API should now be running at http://127.0.0.1:8000.
 1. /create-users - Create a New User
 This endpoint allows users to create a new account.
 
-Method: POST
-
-Parameters:
-
-name: The username of the user.
-
-password: The password for the user.
-
 Example Request:
 ```bash
 POST /create-users
@@ -86,16 +78,6 @@ Example Response:
 ```
 2. /ask-question - Ask a Question
 This endpoint allows users to ask a question. It will match the question with the most similar FAQ question and return an answer. If no match is found, OpenAI will provide an answer.
-
-Method: POST
-
-Parameters:
-
-username: The username of the user.
-
-password: The password for the user.
-
-user_query: The question the user is asking.
 
 Example Request:
 ```bash
@@ -126,36 +108,6 @@ Example Response (OpenAI Fallback):
   "response": "To reset your password, you need to go to the account settings and click on 'Forgot Password'. Then follow the instructions sent to your email."
 }
 ```
-Project Structure
-```bash
-.
-├── app.py             # FastAPI application
-├── models.py          # Database models and schema
-├── crud.py            # CRUD operations for database interactions
-├── dependencies.py    # Dependency injection functions
-├── database.py        # Database connection setup
-├── .env               # Environment variables (not to be committed)
-├── requirements.txt   # Python dependencies
-├── question_database.json  # JSON file containing FAQ questions and answers
-└── README.md          # Project documentation
-```
-
-Requirements
-Python 3.7+
-
-FastAPI
-
-SQLAlchemy
-
-OpenAI Python client (openai)
-
-langchain for embeddings
-
-scikit-learn for cosine similarity
-
-python-jose for JWT authentication
-
-python-dotenv for managing environment variables
 
 Install Requirements:
 ```bash
